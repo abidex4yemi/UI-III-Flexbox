@@ -156,7 +156,6 @@ h5 {
 
 body {
 	font-size: 1em;
-	color: #f4f4f4;
 	background: #fff;
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
@@ -193,9 +192,154 @@ body {
 	text-decoration: none;
 	color: #f4f4f4;
 	transition: .2s;
-	font-size: 1.3em;
+	font-size: 1.1em;
 }
 
 .nav-list-item-link:hover {
 	color: #010A26;
+}
+
+/* Hero styles */
+.hero {
+	padding-top: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.hero-content {
+	text-align: center;
+}
+
+.hero-chant {
+	font-family: 'Playball', cursive;
+	color: #010A26;
+	display: block;
+	font-size: 5rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.hero-media-container {
+	background: url('../img/header-img.png') no-repeat center/cover;
+	width: 400px;
+	height: 400px;
+}
+
+.btn {
+	color: #010A26;
+	text-align: center;
+	transition: .3s;
+}
+
+.btn:hover {
+	outline: 0;
+	background: #731F35;
+	color: #fff;
+}
+
+.btn:active {
+	transform: translateY(2px);
+}
+
+.call-out {
+	margin-top: 25px;
+	width: 200px;
+	padding: 10px;
+	font-size: 2em;
+	cursor: pointer;
+	border-color: #010A26;
+}
+
+/* company-info-section */
+.company-info-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.company-info-media {
+	background: url('../img/mid-page-accent.jpg') no-repeat center/cover;
+	width: 100%;
+	height: 200px;
+}
+
+.company-info-features,
+.company-info-about {
+	flex-basis: 50%;
+}
+
+.info-section {
+	margin: 20px 0;
+	padding: 1em;
+	text-align: justify;
+}
+
+.company-info-heading {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.company-info-section-group {
+	display: flex;
+	justify-content: space-between;
+}
+
+.company-info-contact {
+	padding: 3em 0;
+}
+
+.contact-list-item {
+	margin: 2em 0;
+}
+
+.address {
+	display: block;
+	margin: .3em 0;
+}
+
+.contact-info-links {
+	transition: .2s;
+	text-decoration: none;
+	color: #010A26;
+}
+
+.contact-info-links:hover {
+	color: #731F35;
+}
+
+/* footer styles */
+.main-footer,
+.footer-copyright {
+	text-align: center;
+	padding: 3em 0 6em 0;
+}
+
+.company-info-contact {
+	text-align: left;
+}
+
+@media screen and (max-width: 1024px) {
+	.container {
+		width: 100%;
+		padding: 0 20px;
+	}
+
+	.nav-list-item {
+		margin-left: 1.5em;
+	}
+
+	.hero-chant {
+		font-size: 3rem;
+	}
+
+	.hero-media-container {
+		max-width: 100%;
+		width: 300px;
+		height: 300px;
+	}
+
+	.company-info-vision {
+		margin: 20px 0 0 0;
+	}
 }
